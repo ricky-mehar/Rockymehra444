@@ -1,0 +1,530 @@
+/*Google Font CDN LInk*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ text-decoration:none;
+}
+/*Side Navigation Menu Button CSS*/
+nav .menu-btn,
+.navbar .cencel-btn{
+    position:absolute;
+    color:#fff;
+    font-size:30px;
+    right:30px;
+    top:20px; 
+    display:none;
+    cursor:pointer;
+}
+nav .menu-btn{
+    color:black;
+}
+nav.sticky .menu-btn{
+    color:#FFF;
+}
+/*Home Section CSS*/
+.home{
+    height:100vh;
+    width:100%;
+ /*   background:url("https://as1.ftcdn.net/v2/jpg/07/32/09/90/1000_F_732099080_RmVDqFuFCIViXKhzS2XUiSsPMk6v6LYH.jpg") no-repeat;
+   */
+   background:url("photo13.webp");
+   background-position:center;
+    background-Size:cover;
+   background-attachment: fixed;
+}
+.home .home-contents{
+    height:100%;
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    font-family:'Ubuntu',sans-serif;
+}
+.home .text .text-one{
+      font-size:25px;
+      color:black;
+      
+}
+.home .text .text-two{
+    font-size:65px;
+    font-weight:600;
+    color:black;
+    
+}
+.home .text .text-three{
+    font-size:40px;
+    margin:-3px;
+    color:black;
+    
+}
+.home .text .text-fourth{
+    font-size:23px;
+    margin:5px 0;
+    color:black;
+    
+}
+.home .button{
+    margin:10px 0;
+}
+.home .button button{
+    outline:none;
+    font-size:25px;
+    font-weight:500;
+    padding:8px 8px;
+    color:#FFF;
+    background:#031958;
+    border:2px solid transparent;
+    border-radius:10px;
+    transition:all 0.6s ease;
+}
+.home .button button:hover{
+    color:#031958;
+    background-color: #FFF;
+    border-color: #031958;
+
+}
+/* About Me Section CSS*/
+section{
+    padding-top:40px;
+}
+section .content{
+       width:80%;
+       margin:40px auto;
+       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+section .title{
+    display:flex;
+    justify-content:center;
+    margin-bottom:40px;
+}
+section .title span{
+    font-size:30px;
+    font-weight:600;
+    padding-bottom:8px;
+    position:relative;
+}
+section .title span::before,
+section .title span::after{
+     content:'';
+     position:absolute;
+     left:0;
+     bottom:0;
+     height:3px;
+     width:100%;
+     background:#031958;
+}
+section .title span::after{
+      width:70%;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:-7px;
+}
+.about .about-details{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.about .about-details .right{
+    width:45%;
+}
+.about .about-details .right img{
+    height:400px;
+    width:400px;
+    object-fit:cover;
+    border-radius:50px;
+    border:2px solid black;
+}
+.about .about-details .left{
+    width:55%;
+}
+section .topic{
+    font-size:25px;
+    font-weight:500;
+    color:black;
+    margin-bottom:10px;
+}
+ .about-details .left p{
+      color:black;
+      text-align:justify;
+}
+section .button{
+  margin:10px 0;
+}
+section .button button{
+    outline:none;
+    font-size:25px;
+    font-weight:500;
+    padding:8px 8px;
+    color:#FFF;
+    background:#031958;
+    border:2px solid transparent;
+    border-radius:10px;
+    transition:all 0.6s ease;
+}
+section .button button:hover{
+    color:#031958;
+    background-color: #FFF;
+    border-color: #031958;
+}
+
+/* Custom Scroll Bar CSS*/
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background:#FFF;
+}
+::-webkit-scrollbar-thumb{
+    background: #031958;
+    border-radius:17px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#a5b7e8;
+    border-radius:17px;
+}
+
+
+/*Navigation Menu CSS*/
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 0;
+    font-family:'Ubuntu', sans-serif;
+    transition:all 0.4s ease;
+    z-index:998;
+}
+nav.sticky{
+    padding:13px 0;
+    background:#031958;
+}
+  
+nav .navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+nav .navbar .logo a{ 
+    font-size:40px;
+    font-weight:500;
+    color:black;
+}
+nav.sticky .navbar .logo a{
+    color:#FFF;
+}
+
+nav .navbar .menu{
+    display:flex;
+}
+nav .navbar .menu li{
+    margin:0 8px;
+    list-style:none;
+}
+.navbar .menu li a{
+    font-size:18px;
+    font-weight:500;
+    color:black;
+    transition:all 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color:#FFF;
+}
+nav.sticky .navbar .menu li a{
+    color:#FFF;
+}
+
+nav.sticky .navbar .menu li a:hover{
+    color:black;
+}
+.navbar .media-icons a{
+    font-size:18px;
+    margin: 0 6px;
+    color:#031958;
+}
+nav.sticky .navbar .media-icons a{
+    color:#FFF;
+}
+
+
+/*My Skills CSS */
+.skills{
+    background:#f0f8ff;
+}
+.skills .content{
+    
+    padding:40px 0;
+}
+ 
+.skills .skills-details{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.skills .skills-details .left{
+    width:50%;
+}
+.skills-details .left p{
+     color:#031958;
+     text-align:justify;
+}
+.skills-details .left .experience{
+    display:flex;
+    align-items:center;
+}
+.skills-details .left .experience .num{
+    font-size:80px;
+    color:#031958;
+    font-weight:500;
+}
+.skills-details .left .experience .exp{
+    font-size:18px;
+    color:#031958;
+    font-weight:500;
+}
+.skills .skills-details .boxes{
+    width:45%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.skills .skills-details .boxes .box{
+    width: calc(100% / 2 - 20px);
+}
+.skills .skills-details .boxes .box .topic{
+    font-size:30px;
+    font-weight:500;
+    color:#031958;
+}
+.skills .skills-details .boxes .box .num{
+    font-size:60px;
+    font-weight:500;
+    color:#031958;
+}
+
+/* My Service Section CSS */
+.services .boxes{
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.services .content .boxes .box{
+    width: calc(33.33% - 20px); /* Adjust this width as needed */
+    margin:10px 0 ;
+    border-radius:12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding:20px 30px;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+    color:#FFF;
+    background:#031958;
+}
+.services .boxes .box .icon{
+    height:50px;
+    width:50px;
+    color:#FFF;
+    background:#031958;
+    border-radius:50%;
+    text-align:center;
+    line-height: 50px;
+    margin:0 auto 10px auto;
+    transition:all 0.7s ease ;
+}
+.services .boxes .box:hover .icon{
+    background:#FFF;
+    color:#031958;
+}
+/* Contact CSS */
+.contact{
+    background:#f0f8ff;
+    padding:20px 0;
+}
+.contact .text{
+    text-align: center;
+    margin:auto;
+    width:80%; 
+}
+/* Footer CSS */
+footer{
+    background:#031958;
+    text-align: center;
+    padding:15px 0;
+    font-family:'Ubuntu', sans-serif;
+}
+footer span ,a{
+    color:#FFF;
+    font-size:17px;
+    font-weight:500;
+}
+footer .text span a:hover{
+    text-decoration:underline;
+}
+
+.scroll-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:7px 12px;
+    background:#031958;
+    color:#FFF;
+    font-size:18px;
+    border-radius:6px;
+    box-shadow: 0 5px 10px rgba(0,0,0.15);
+}
+
+
+/*Resposive Media Quary CSS*/
+@media (max-width:1200px){
+    .about .content{
+        width:80%;
+    }
+     
+    }
+@media (max-width:1160px){
+    .about .about-details{
+       flex-direction:column;
+    }
+   
+   .about .about-details .right{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        
+    }
+    .about .about-details .left{
+        width:95%;
+        margin:40px 0;
+    }
+    .services .boxes .box{
+        width:calc(100% / 2 - 20px);
+    }
+    .contact .text{  
+        width:90%;    
+    }    
+    
+} 
+
+@media (max-width:1040px){
+    .about .about-details .right img{
+        height:350px;
+        width:350px;
+    }
+
+}
+@media (max-width:750px)
+{
+     
+    nav .navbar .menu{
+        position:absolute;
+        left:-100%;
+        right:0;
+        top:0;
+        height:100vh;
+        max-width:400px;
+        width:100%;
+        background:#031958;
+        flex-direction:column;
+        align-items:center;
+        padding:60px;
+        transition:all 0.7s ease;
+
+    }
+    nav .navbar.active .menu{
+        left:0;
+        
+    }
+
+
+    .navbar .menu li a{
+        display:block;
+        margin:10px 0;
+        font-size:23px;
+        color:#FFF;
+    }
+    nav.sticky .navbar .menu li a:hover{
+        color:#05334d;
+
+    }
+
+    nav .menu-btn,
+    .navbar .cencel-btn{
+        display:block;
+    }
+    .navbar .media-icons a{
+        display:none;
+    }
+    
+    
+
+    .home .text .text-two{
+        font-size:55px;
+       
+        
+    }
+    .home .text .text-three{
+        font-size:30px;
+        
+    }
+    .skills .skills-details{
+        flex-direction:column;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .skills .skills-details .left{
+        width:90%;
+    }
+    .skills .skills-details .boxes{
+        width:90%;
+        margin:40px 0;
+    }
+    .services .boxes .box{
+        width:100%;
+    }
+    .services .content .boxes .box .topic{
+        font-size:110%;
+        
+      }
+      .services .content .boxes .box{
+        text-align: center;
+      }
+
+   .contact .text{  
+    width:90%;   
+   }
+} 
+  
+
+
+@media (max-width:550px){
+    .home .text .text-two{
+        font-size:45px;
+       
+        
+    }
+    .home .text .text-three{
+        font-size:30px;
+    } 
+    
+    .contact .text{  
+        width:90%;    
+    } 
+   .section .content{
+    width:100%
+   }
+
+
+
+ 
+ .services .content .boxes .box{
+     width:100%;
+     height:100%;
+ }
+ 
+}
+    
